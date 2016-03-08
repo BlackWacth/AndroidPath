@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_mode_null"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom|withText"
+        android:title="null" />
+
+    <item
+        android:id="@+id/action_mode_clear"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom|withText"
+        android:title="clear" />
+
+    <item
+        android:id="@+id/action_mode_src"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom|withText"
+        android:title="src" />
+
+    <item
+        android:id="@+id/action_mode_dst"
+        android:orderInCategory="102"
+        android:title="dst" />
+
+    <item
+        android:id="@+id/action_mode_src_over"
+        android:orderInCategory="103"
+        android:title="src_over" />
+
+    <item
+        android:id="@+id/action_mode_dst_over"
+        android:orderInCategory="104"
+        android:title="dst_over" />
+
+    <item
+        android:id="@+id/action_mode_src_in"
+        android:orderInCategory="105"
+        android:title="src_in" />
+
+    <item
+        android:id="@+id/action_mode_dst_in"
+        android:orderInCategory="106"
+        android:title="dst_in" />
+
+    <item
+        android:id="@+id/action_mode_src_out"
+        android:orderInCategory="107"
+        android:title="src_out" />
+
+    <item
+        android:id="@+id/action_mode_dst_out"
+        android:orderInCategory="108"
+        android:title="dst_out" />
+    <item
+        android:id="@+id/action_mode_src_atop"
+        android:orderInCategory="109"
+        android:title="src_atop" />
+
+    <item
+        android:id="@+id/action_mode_dst_atop"
+        android:orderInCategory="110"
+        android:title="dst_atop" />
+
+    <item
+        android:id="@+id/action_mode_xor"
+        android:orderInCategory="111"
+        android:title="xor" />
+
+    <item
+        android:id="@+id/action_mode_darken"
+        android:orderInCategory="112"
+        android:title="darken" />
+
+    <item
+        android:id="@+id/action_mode_lighten"
+        android:orderInCategory="113"
+        android:title="lighten" />
+
+    <item
+        android:id="@+id/action_mode_multiply"
+        android:orderInCategory="114"
+        android:title="multiply" />
+
+    <item
+        android:id="@+id/action_mode_screen"
+        android:orderInCategory="115"
+        android:title="screen" />
+
+    <item
+        android:id="@+id/action_mode_add"
+        android:orderInCategory="116"
+        android:title="add" />
+
+    <item
+        android:id="@+id/action_mode_overlay"
+        android:orderInCategory="117"
+        android:title="overlay" />
+
+</menu>
