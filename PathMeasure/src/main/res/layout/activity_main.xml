@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.hua.androidpath.MainActivity">
 
-    <com.hua.androidpath.view.PathView
+    <com.hua.androidpath.view.HeartView
         android:id="@+id/pathview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

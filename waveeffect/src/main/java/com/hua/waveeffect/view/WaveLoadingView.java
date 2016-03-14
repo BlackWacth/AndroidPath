@@ -78,12 +78,10 @@ public class WaveLoadingView extends View{
                 while (true) {
                     mCurrentWaveLeft += mWaveTransSpeed;
                     mCurrentWaveTop -= mWaveUpSpeed;
-                    L.i("mCurrentWaveTop : " + mCurrentWaveTop);
                     if(mCurrentWaveLeft >= mWave.getWidth()) {
                         mCurrentWaveLeft = 0;
                     }
                     if(mCurrentWaveTop <= mWaveUpEnd) {
-                        L.i("------------------ <= -----------------------");
                         mCurrentWaveTop = mWaveUpStart;
                     }
                     try {
@@ -109,7 +107,7 @@ public class WaveLoadingView extends View{
         mBoxTop = (h - mBoxHeight) / 2;
 
         mWaveUpStart = mBoxTop + mBoxHeight;
-        mWaveUpEnd = mBoxTop - 260;
+        mWaveUpEnd = mBoxTop;
         L.i("=======mWaveUpStart : " + mWaveUpStart);
 
         mCurrentWaveLeft = 0;
@@ -129,7 +127,7 @@ public class WaveLoadingView extends View{
         canvas.setDrawFilter(mDrawFilter);
         canvas.drawColor(Color.TRANSPARENT);
 
-        //蒋绘制的保存到新的图层
+        //将绘制的保存到新的图层
         int sc = canvas.saveLayer(0, 0, mTotalWidth, mTotalHeight, null,Canvas.ALL_SAVE_FLAG);
         mWaveSrcRect.set(mCurrentWaveLeft, 0, mCurrentWaveLeft + mBoxWidth, mBoxHeight);
         mWaveDestRect.set(mBoxLeft, mCurrentWaveTop, mBoxLeft + mBoxWidth, mWaveUpStart);

@@ -65,8 +65,8 @@ public class PathView extends View{
         Log.i("hzw", "ieoRect = " + ieoRect);
 
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
-//        mPaint.setStyle(Paint.Style.STROKE);
-//        mPaint.setStrokeWidth(3);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPaint.setStrokeWidth(3);
         mPaint.setColor(Color.RED);
     }
 
